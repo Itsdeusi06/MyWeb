@@ -1,23 +1,49 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node modules (paquets instal·lats amb npm o yarn)
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Fitxers de compilació i construcció
+dist/
+build/
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
+# Fitxers temporals del sistema operatiu
 .DS_Store
+Thumbs.db
+
+# Fitxers de configuració de l'editor de codi
+.vscode/
+.idea/
+
+# Fitxers de logs i depuració
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fitxers d'entorn (configuració local, API keys, etc.)
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Caché de npm i yarn
+.npm/
+.yarn/
+
+# Fitxers de dependències bloquejades
+package-lock.json
+yarn.lock
+
+# Fitxers de test automàtic (opcional)
+coverage/
+
+# Fitxers de configuració de ESLint i Prettier (si no vols pujar-los)
+.eslintcache
+.prettierignore
+
+# Fitxers de servei de Firebase (si uses Firebase)
+.firebase/
+firestore.indexes.json
+firestore.rules
+
+# Fitxers de configuració de la línia d'ordres de GitHub
+.github/
