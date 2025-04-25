@@ -1,0 +1,30 @@
+.navigation-menu {
+    width: 100%;
+    background-color: black; 
+    padding: 10px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .navigation-menu ol {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .navigation-menu li {
+    display: inline-block;
+    float: right; 
+  }
+  
+  .navigation-menu ol li a {
+    color: white; 
+    text-decoration: none;
+    padding: 8px;
+    transition: color 0.3s ease; 
+  }
+  
+  .navigation-menu ol li a.active {
+    color: white; 
+    font-weight: bold;
+  }
+  

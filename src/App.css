@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.left, .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.left {
+  background-color: white;
+  color: black;
+}
+.right {
+  background-color: black;
+  color: white;
+}
+.parallax {
+  /* Imagen de fondo */
+  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
