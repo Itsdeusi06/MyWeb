@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -65,12 +66,45 @@ body, html {
   background-color: black;
   color: white;
 }
-.parallax {
-  /* Imagen de fondo */
-  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413');
+
+/* EFECTE PARALLAX */
+.container .left {
+  background-image: url('');
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.container .right {
+  background-image: url('');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right .button{
+  color: black;
+  background-color: white;
+  height: 5%;
+  width: 10%;
+  transition: all 0.3s ease-in-out;
+}
+.left .button{
+  color: white;
+  background-color: black;
+  height: 5%;
+  width: 10%;
+  transition: all 0.3s ease-in-out;
+}
+
+.right .button:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.left .button:hover {
+  color: black;
+  background-color: transparent;
 }

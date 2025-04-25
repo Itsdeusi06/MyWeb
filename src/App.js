@@ -10,8 +10,12 @@ function App() {
       <Navbar />
       <header className="App-header">
       <div class="container">
-        <div class="left">Videojuegos</div>
-        <div class="right">Programación</div>
+        <div class="left">
+          <button class="button">Videogames</button>
+        </div>
+        <div class="right">
+          <button class="button">Coding</button>
+        </div>
       </div>
       </header>
     </div>

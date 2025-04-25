@@ -1,30 +1,35 @@
 .navigation-menu {
-    width: 100%;
-    background-color: black; 
-    padding: 10px;
-    transition: background-color 0.3s ease; 
-  }
-  
-  .navigation-menu ol {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
+  width: 5%;
+  height: 100vh;
+  background-color: black;
+  padding: 20px;
+  position: fixed; /* se queda pegado a la izquierda */
+  top: 0;
+  left: 0;
+}
 
-  .navigation-menu li {
-    display: inline-block;
-    float: right; 
-  }
-  
-  .navigation-menu ol li a {
-    color: white; 
-    text-decoration: none;
-    padding: 8px;
-    transition: color 0.3s ease; 
-  }
-  
-  .navigation-menu ol li a.active {
-    color: white; 
-    font-weight: bold;
-  }
-  
+.navigation-menu ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Cambia a columna */
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu li {
+  display: block;
+}
+
+.navigation-menu ol li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  display: block; /* Para que ocupe todo el ancho */
+  transition: color 0.3s ease;
+}
+
+.navigation-menu ol li a.active {
+  font-weight: bold;
+  color: white;
+}
