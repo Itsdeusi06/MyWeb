@@ -1,3 +1,15 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* App Layout */
 .App {
   text-align: center;
 }
@@ -13,43 +25,33 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Header Styles */
+.header {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem; /* Bigger text */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black box */
+  color: white; /* Text color */
+  padding: 20px 40px; /* Space around the text */
+  border-radius: 10px; /* Optional: rounded corners */
+  text-align: center;
+  z-index: 10; /* Keeps it above other elements */
 }
 
+/* Links */
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body, html {
-  height: 100%;
-}
+/* Parallax Layout */
 .container {
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
+
 .left, .right {
   flex: 1;
   display: flex;
@@ -57,54 +59,70 @@ body, html {
   justify-content: center;
   font-size: 2rem;
   font-family: sans-serif;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
+
 .left {
   background-color: white;
   color: black;
 }
+
 .right {
   background-color: black;
   color: white;
 }
 
-/* EFECTE PARALLAX */
-.container .left {
-  background-image: url('');
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container .right {
-  background-image: url('');
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.right .button{
-  color: black;
-  background-color: white;
-  height: 5%;
-  width: 10%;
-  transition: all 0.3s ease-in-out;
-}
-.left .button{
-  color: white;
-  background-color: black;
-  height: 5%;
-  width: 10%;
-  transition: all 0.3s ease-in-out;
+/* Background Images */
+.left {
+  background-image: url(''); /* Add background image URL here */
 }
 
-.right .button:hover {
+.right {
+  background-image: url(''); /* Add background image URL here */
+}
+
+/* Buttons */
+.button {
+  height: auto;
+  width: auto;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  font-family: inherit;
+}
+
+.left .button {
   color: white;
+  background-color: black;
+}
+
+.right .button {
+  color: black;
+  background-color: white;
+}
+
+.left .button:hover,
+.right .button:hover {
   background-color: transparent;
 }
 
 .left .button:hover {
   color: black;
-  background-color: transparent;
+}
+
+.right .button:hover {
+  color: white;
+}
+
+/* Keyframes */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

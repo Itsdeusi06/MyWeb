@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './header';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div class="header">Itsdeusi06</div>
       <Navbar />
-      <header className="App-header">
       <div class="container">
         <div class="left">
-          <button class="button">Videogames</button>
+          <h1 class="button">Videogames</h1>
         </div>
         <div class="right">
-          <button class="button">Coding</button>
+          <h1 class="button">Coding</h1>
         </div>
       </div>
-      </header>
     </div>
   );
 }
