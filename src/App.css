@@ -7,11 +7,13 @@
 
 body, html {
   height: 100%;
+  width: 100%;
 }
 
 /* App Layout */
 .App {
   text-align: center;
+  height: 100%;
 }
 
 /* Header Styles */
@@ -20,67 +22,64 @@ body, html {
   top: 50%;
   left: 53%;
   transform: translate(-50%, -50%);
-  font-size: 4rem; /* Bigger text */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black box */
-  color: white; /* Text color */
-  padding: 20px 40px; /* Space around the text */
-  border-radius: 10px; /* Optional: rounded corners */
-  text-align: center;
-  z-index: 10; /* Keeps it above other elements */
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Links */
-.App-link {
-  color: #61dafb;
+.header:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* Parallax Layout */
 .container {
   display: flex;
+  flex-direction: row;
   height: 100%;
   width: 100%;
+  margin-left: 2%;
+  padding-left: 3%;
+  position: absolute;
+  overflow: hidden;
 }
 
-.left, .right {
+
+/* Left Section */
+.left {
   flex: 1;
+  background-image: url('../public/gameingPicture.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  font-family: sans-serif;
-  background-attachment: fixed;
+}
+
+/* Right Section */
+.right {
+  flex: 1;
+  background-image: url('../public/codingPicture.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-.left {
-  background-color: white;
-  color: black;
-}
-
-.right {
-  background-color: black;
-  color: white;
-}
-
-/* Background Images */
-.left {
-  background-image: url(''); /* Add background image URL here */
-}
-
-.right {
-  background-image: url(''); /* Add background image URL here */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Buttons */
 .button {
-  height: auto;
-  width: auto;
   padding: 10px 20px;
-  transition: all 0.3s ease-in-out;
   font-family: inherit;
+  transition: all 0.3s ease-in-out;
 }
 
 .left .button {
@@ -93,15 +92,14 @@ body, html {
   background-color: white;
 }
 
-.left .button:hover, .right .button:hover {
-  background-color: transparent;
-}
-
 .left .button:hover {
   color: black;
+  background-color: rgba(255, 255, 255, 0.479);
+  transform: scale(1.05);
 }
 
 .right .button:hover {
   color: white;
+  background-color: rgba(0, 0, 0, 0.479);
+  transform: scale(1.05);
 }
-
