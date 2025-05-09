@@ -1,28 +1,33 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import { ReactLenis, useLenis } from 'lenis/react'
+// import Navbar from './components/Navbar';
+import { ReactLenis, useLenis } from 'lenis/react';
+import HeroScroll from './components/HeroScroll';
 
 function App() {
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-  })
+  useLenis(() => {
+    // Optional scroll callback
+  });
+
   return (
     <ReactLenis root>
-      {
       <div className="App">
-      <div class="header">Itsdeusi06</div>
-      <Navbar />
-      <div class="container">
-        <div class="left">
-          <h1 class="button">Videogames</h1>
-        </div>
-        <div class="right">
-          <h1 class="button">Coding</h1>
+        <HeroScroll />
+
+        {/*<div className="header">Itsdeusi06</div>*/}
+
+        {/* <Navbar /> */}
+
+        <div className="container">
+          <div className="left">
+            <h1 className="button">Videogames</h1>
+          </div>
+          <div className="right">
+            <h1 className="button">Coding</h1>
+          </div>
         </div>
       </div>
-      </div>
-      }
     </ReactLenis>
-  )
+  );
 }
+
 export default App;
