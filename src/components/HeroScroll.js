@@ -32,10 +32,12 @@ export default function HeroScroll() {
         className="centered-text"
         style={{
           opacity: textOpacity,
-          transform: `translate(-50%, -95%) scale(${scale})`,
+          transform: `translate(-50%, -80%) scale(${scale})`,
         }}
       >
-        <h1>Itsdeusi06</h1>
+        <h1>
+          Pau Deusedes<br />Domench
+        </h1>
       </div>
     </div>
   );
