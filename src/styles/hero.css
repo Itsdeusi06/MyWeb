@@ -1,0 +1,200 @@
+.heroSection {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .heroSection {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heroSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .heroContainer {
+    flex-direction: row;
+  }
+}
+
+.heroText {
+  width: 100%;
+  max-width: 50%;
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+}
+
+.heroHighlight {
+  color: #0284c7;
+}
+@media (prefers-color-scheme: dark) {
+  .heroHighlight {
+    color: #38bdf8;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .heroSubtitle {
+    font-size: 1.875rem;
+  }
+}
+
+.heroDescription {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+}
+@media (prefers-color-scheme: dark) {
+  .heroDescription {
+    color: #d1d5db;
+  }
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryButton {
+  background-color: #0284c7;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.primaryButton:hover {
+  background-color: #0369a1;
+}
+
+.secondaryButton {
+  border: 2px solid #0284c7;
+  color: #0284c7;
+  background: none;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+.secondaryButton:hover {
+  background: #f0f9ff;
+}
+@media (prefers-color-scheme: dark) {
+  .secondaryButton {
+    color: #38bdf8;
+    border-color: #38bdf8;
+  }
+  .secondaryButton:hover {
+    background: #1e293b;
+  }
+}
+
+.heroImageWrapper {
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImageContainer {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+}
+@media (min-width: 640px) {
+  .heroImageContainer {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.heroCircle {
+  position: absolute;
+  border-radius: 50%;
+}
+.heroCircle1 {
+  inset: 0;
+  background: #bae6fd;
+  opacity: 0.2;
+}
+.heroCircle2 {
+  inset: 1rem;
+  background: #7dd3fc;
+  opacity: 0.3;
+}
+.heroCircle3 {
+  inset: 2rem;
+  background: #38bdf8;
+  opacity: 0.4;
+}
+@media (prefers-color-scheme: dark) {
+  .heroCircle1 {
+    background: #0c4a6e;
+  }
+  .heroCircle2 {
+    background: #0369a1;
+  }
+  .heroCircle3 {
+    background: #0ea5e9;
+  }
+}
+
+.heroImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  z-index: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .heroImage {
+    border-color: #1e293b;
+  }
+}
+
+/* Optional: floating animation */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

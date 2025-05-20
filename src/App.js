@@ -14,22 +14,8 @@ import './styles/skills.css';
 import './styles/about.css';
 import './styles/contact.css';
 import './styles/footer.css';
-import { db } from './firebase';
-import { ref, push } from "firebase/database";
 
-async function handleSubmit(e) {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData.entries());
 
-  try {
-    await push(ref(db, "contacts"), data);
-    alert('Message sent!');
-  } catch (error) {
-    alert('Error sending message');
-    console.error(error);
-  }
-}
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -59,10 +45,6 @@ function App() {
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero scrollToSection={scrollToSection} />
       <Projects />
-      <Skills />
-      <About />
-      <ContactSection handleSubmit={handleSubmit} />
-      <Footer />
     </div>
   );
 }
