@@ -1,0 +1,129 @@
+.aboutSection {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f3f4f6;
+}
+@media (min-width: 640px) {
+  .aboutSection {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .aboutSection {
+    background: #1f2937;
+  }
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .aboutContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.aboutImageWrapper {
+  width: 100%;
+  max-width: 16rem;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .aboutImageWrapper {
+    max-width: 33%;
+  }
+}
+
+.aboutImage {
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  .aboutImage {
+    border-color: #1f2937;
+    background: #1f2937;
+  }
+}
+
+.aboutText {
+  width: 100%;
+  max-width: 48rem;
+}
+@media (min-width: 768px) {
+  .aboutText {
+    max-width: 66%;
+  }
+}
+
+.aboutTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.aboutParagraph {
+  color: #4b5563;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+.aboutParagraphLast {
+  margin-bottom: 1.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  .aboutParagraph {
+    color: #d1d5db;
+  }
+}
+
+.aboutLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.aboutLink {
+  display: flex;
+  align-items: center;
+  color: #374151;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 1.125rem;
+}
+.aboutLink:hover {
+  color: #0284c7;
+}
+@media (prefers-color-scheme: dark) {
+  .aboutLink {
+    color: #d1d5db;
+  }
+  .aboutLink:hover {
+    color: #38bdf8;
+  }
+}
+
+.aboutIcon {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
