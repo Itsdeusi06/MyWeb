@@ -45,6 +45,7 @@ function App() {
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero scrollToSection={scrollToSection} />
       <Projects />
+      <Skills />
       <About />
     </div>
   );
