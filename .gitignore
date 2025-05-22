@@ -45,6 +45,7 @@ coverage/
 firestore.indexes.json
 firestore.rules
 firebase.json
+src/firebase.js
 
 # Fitxers de configuració de la línia d'ordres de GitHub
 .github/
