@@ -1,4 +1,6 @@
-# MyWeb Portfolio - Setup Guide
+# MyWeb Portfolio - Setup Guide - Hosting on Firebase
+
+# 🚨 [Visit my Portafolio](https://portfolio-2e91d.web.app/) 🚨
 
 Follow these steps to clone and run this project locally:
 
@@ -7,8 +9,8 @@ Follow these steps to clone and run this project locally:
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Itsdeusi06/MyWeb
+cd MyWeb
 ```
 
 ## 2. Install Dependencies
@@ -17,11 +19,13 @@ Install all required packages:
 
 ```bash
 npm install
+npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome-svg-core
+npm install react-icons
+npm install firebase
 ```
 
 ## 3. Set Up Environment Variables
-
-Create a `.env` file in the root directory if needed (for API keys or other secrets).  
+ 
 **Note:** The file `src/firebase.js` is ignored by git for security. If you need Firebase, create your own `src/firebase.js` using your Firebase project credentials.
 
 Example `src/firebase.js`:
@@ -61,6 +65,39 @@ To create a production build:
 ```bash
 npm run build
 ```
+
+## 6. Host with Firebase Hosting
+
+### a. Install Firebase CLI (if not already installed)
+
+```bash
+npm install -g firebase-tools
+```
+
+### b. Login to Firebase
+
+```bash
+firebase login
+```
+
+### c. Initialize Firebase Hosting (only once per project)
+
+```bash
+firebase init 
+```
+- Select your Firebase project.
+- Set `build` as your public directory.
+- Configure as a single-page app: **Yes**.
+- Do **not** overwrite `index.html` if prompted.
+
+### d. Deploy to Firebase Hosting
+
+```bash
+npm run build
+firebase deploy
+```
+
+Your site will be live at the Firebase Hosting URL provided in the terminal.
 
 ---
 
