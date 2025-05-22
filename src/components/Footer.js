@@ -8,7 +8,7 @@ function Footer() {
         <div className="footerMain">
           <div className="footerBrand">
             <span className="footerName">Pau Deusedes Domenech</span>
-            <p className="footerRole">Unity Game Developer</p>
+            <p className="footerRole">Game Developer - Programmer</p>
           </div>
           <div className="footerLinks">
             <a href="https://github.com/Itsdeusi06" className="footerLink">
