@@ -22,6 +22,7 @@ npm install
 npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome-svg-core
 npm install react-icons
 npm install firebase
+npm install i18next react-i18next i18next-browser-languagedetector --legacy-peer-deps
 ```
 
 ## 3. Set Up Environment Variables

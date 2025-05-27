@@ -28,6 +28,7 @@
   font-weight: 700;
   color: var(--primary);
   text-decoration: none;
+  padding-left: 20px;
 }
 
 .nav-links {
@@ -97,6 +98,15 @@
   color: var(--light);
 }
 
+.nav-actions {
+  padding-right: 20px;
+}
+
+/* Hide language flags inside menu by default (desktop) */
+.mobile-lang-select {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
@@ -123,4 +133,41 @@
   .mobile-menu-btn {
     display: block;
   }
+
+  /* Show flags inside mobile menu */
+  .mobile-lang-select {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .mobile-lang-select img {
+    width: 28px;
+    height: 28px;
+  }
+}
+/* Estilos para las banderas */
+.lang-select {
+  display: flex;
+  gap: 10px;
+  margin-left: 15px;
+  align-items: center;
+}
+
+.lang-select img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.lang-select img:hover {
+  border-color: #61dafb;
+}
+
+.lang-select img.active-flag {
+  border-color: #61dafb;
 }

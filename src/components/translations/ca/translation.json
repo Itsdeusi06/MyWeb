@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Inici",
+    "projects": "Projectes",
+    "skills": "Habilitats",
+    "about": "Sobre mi",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "greeting": "Hola, sóc",
+    "name": "Pau Deusedes Domenech",
+    "subtitle": "Desenvolupador de Jocs / Programador",
+    "description": "Actualment estudio Desenvolupament d'Aplicacions Multiplataforma (DAM) amb enfocament en jocs i entreteniment digital. Estic aprenent Unity, fonaments de programació i disseny de jocs, i m'encanta crear petits projectes per millorar les meves habilitats. Apassionat per convertir idees en experiències interactives.",
+    "viewWork": "Veure el meu treball",
+    "contactMe": "Contacta'm",
+    "imageAlt": "Desenvolupament de Jocs"
+  },
+  "projects": {
+    "title": "Els Meus Projectes",
+    "code": "Codi",
+    "demo": "Demostració",
+    "hangman": {
+      "title": "Penjat",
+      "description": "Primer projecte en Python. Joc senzill on has d'endevinar una paraula suggerint lletres. Vaig aprendre funcions, bucles i condicionals."
+    },
+    "timberman": {
+      "title": "Llenyataire",
+      "description": "Talla arbres i evita les branques. Un clon de Timberman fet en C++. Vaig aprendre classes i objectes."
+    },
+    "critter": {
+      "title": "Mascota Virtual",
+      "description": "Cuida una mascota. Estil Tamagotchi. Vaig practicar classes, punters i manipulació de memòria en C++."
+    },
+    "engine": {
+      "title": "Motor 2D",
+      "description": "Motor de jocs 2D lleuger desenvolupat amb C++. Inclou bucle de joc, entrada, renderitzat, col·lisions i gestió d'entitats."
+    },
+    "breakdown": {
+      "title": "Trenca Blocs",
+      "description": "Joc estil Breakout. Vaig aprendre a treballar en equip i col·laborar. Fet amb C++ i SFML."
+    }
+  },
+  "skills": {
+    "title": "Les Meves Habilitats"
+  },
+  "about": {
+    "title": "Sobre Mi",
+    "paragraph1": "Soc estudiant de primer any en Desenvolupament d'Aplicacions Multiplataforma (DAM), especialitzat en entreteniment digital i videojocs. Em apassiona la programació, especialment en el context del desenvolupament de jocs i la tecnologia creativa.",
+    "paragraph2": "Ara mateix estic centrat a aprendre Unity i desenvolupament de videojocs mentre creo petits projectes per reforçar les meves habilitats. Gaudeixo treballant amb motors de joc com Unity.",
+    "paragraph3": "M'encanta resoldre problemes, aprendre com funcionen els sistemes internament i donar vida a les idees mitjançant codi. Actualment estic buscant oportunitats per col·laborar en projectes, aprendre de desafiaments reals i créixer com a desenvolupador."
+  },
+  "contact": {
+    "title": "Contacta amb mi",
+    "description": "Tens preguntes? No dubtis a escriure'm! M'encantaria saber de tu.",
+    "name": "Nom",
+    "email": "Correu electrònic",
+    "subject": "Assumpte",
+    "message": "Missatge",
+    "send": "Envia Missatge"
+  },
+  "footer": {
+    "role": "Desenvolupador de Jocs - Programador",
+    "rights": "Tots els drets reservats."
+  }
+}

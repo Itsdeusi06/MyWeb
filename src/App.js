@@ -16,6 +16,7 @@ import './styles/contact.css';
 import './styles/footer.css';
 import { db } from './firebase';
 import { ref, push } from "firebase/database";
+import './components/languages'; 
 
 async function handleSubmit(e) {
   e.preventDefault();

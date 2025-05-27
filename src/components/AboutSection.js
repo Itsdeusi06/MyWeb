@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -6,6 +7,8 @@ import '../styles/about.css';
 import pfp from '../assets/valorant-player-pigs-may-fly-card-avatar.png';
 
 function AboutSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="aboutSection">
       <div className="aboutContainer">
@@ -17,16 +20,10 @@ function AboutSection() {
           />
         </div>
         <div className="aboutText">
-          <h2 className="aboutTitle">About Me</h2>
-          <p className="aboutParagraph">
-            I'm a first-year student in Multiplatform App Development (DAM), specializing in digital entertainment and video games. I'm passionate about programming, especially in the context of game development and creative technology.
-          </p>
-          <p className="aboutParagraph">
-            Right now, I'm focused on learning Unity and game development while building small projects to strengthen my skills. I enjoy working with game engines like Unity.
-          </p>
-          <p className="aboutParagraph aboutParagraphLast">
-            I love solving problems, learning how systems work under the hood, and bringing ideas to life through code. I'm currently looking for opportunities to collaborate on projects, learn from real-world challenges, and grow as a developer.
-          </p>
+          <h2 className="aboutTitle">{t('about.title')}</h2>
+          <p className="aboutParagraph">{t('about.paragraph1')}</p>
+          <p className="aboutParagraph">{t('about.paragraph2')}</p>
+          <p className="aboutParagraph aboutParagraphLast">{t('about.paragraph3')}</p>
           <div className="aboutLinks">
             <a href="https://github.com/Itsdeusi06" className="aboutLink">
               <FaGithub className="aboutIcon" /> GitHub

@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Pau Deusedes Domenech",
+    "subtitle": "Desarrollador de Juegos / Programador",
+    "description": "Actualmente estudio Desarrollo de Aplicaciones Multiplataforma (DAM) con enfoque en juegos y entretenimiento digital. Estoy aprendiendo Unity, fundamentos de programación y diseño de juegos, y me encanta crear pequeños proyectos para mejorar mis habilidades. Apasionado por convertir ideas en experiencias interactivas.",
+    "viewWork": "Ver Mi Trabajo",
+    "contactMe": "Contáctame",
+    "imageAlt": "Desarrollo de Juegos"
+  },
+"projects": {
+    "title": "Mis Proyectos",
+    "code": "Código",
+    "demo": "Demo",
+    "hangman": {
+      "title": "Ahorcado",
+      "description": "Primer proyecto en Python. Un juego simple donde adivinas una palabra sugiriendo letras. Aprendí funciones, bucles y condicionales."
+    },
+    "timberman": {
+      "title": "Leñador",
+      "description": "Corta árboles y evita las ramas. Un clon de Timberman hecho en C++. Aprendí clases y objetos."
+    },
+    "critter": {
+      "title": "Mascota Virtual",
+      "description": "Cuida una mascota. Estilo Tamagotchi. Practiqué clases, punteros y manipulación de memoria en C++."
+    },
+    "engine": {
+      "title": "Motor 2D",
+      "description": "Motor de juegos 2D ligero hecho en C++. Incluye bucle de juego, entrada, renderizado, colisiones y gestión de entidades."
+    },
+    "breakdown": {
+      "title": "Rompe Bloques",
+      "description": "Juego estilo Breakout. Aprendí a trabajar en equipo y colaborar. Hecho en C++ con SFML."
+    }
+  },
+  "skils": {
+    "title": "Habilidades"
+  },
+   "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "Soy estudiante de primer año en Desarrollo de Aplicaciones Multiplataforma (DAM), especializado en entretenimiento digital y videojuegos. Me apasiona la programación, especialmente en el contexto del desarrollo de juegos y la tecnología creativa.",
+    "paragraph2": "Actualmente estoy centrado en aprender Unity y desarrollo de videojuegos mientras creo pequeños proyectos para reforzar mis habilidades. Disfruto trabajar con motores de juegos como Unity.",
+    "paragraph3": "Me encanta resolver problemas, aprender cómo funcionan los sistemas por dentro y dar vida a las ideas a través del código. Actualmente busco oportunidades para colaborar en proyectos, aprender de desafíos reales y crecer como desarrollador."
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "¿Tienes preguntas? ¡No dudes en escribirme! Me encantaría saber de ti.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje"
+  },
+  "footer": {
+    "role": "Desarrollador de Juegos - Programador",
+    "rights": "Todos los derechos reservados."
+  }
+}
