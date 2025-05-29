@@ -38,6 +38,18 @@
     "breakdown": {
       "title": "Break Down",
       "description": "Breakout-style game. Learned teamwork and collaboration. Built in C++ with SFML."
+    },
+    "fruitninja": {
+      "title": "Fruit Ninja",
+      "description": "A game where you have to slice the food and dodge the bombs. It show a ranking of the best scores, I make a few version with XML, Json, MySQL and firebase for practice in backend integration and data persistence."
+    },
+    "valowiki": {
+      "title": "ValoWiki",
+      "description": "Informative website about the game Valorant: Home, Agents, Skins, Esports. Built in a team with HTML, CSS, and JavaScript."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "A React app with Firebase for the contact section, allowing users to send messages. Here you'll see my projects, skills and learn about me."
     }
   },
   "skills": {

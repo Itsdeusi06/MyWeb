@@ -38,6 +38,18 @@
     "breakdown": {
       "title": "Trenca Blocs",
       "description": "Joc estil Breakout. Vaig aprendre a treballar en equip i col·laborar. Fet amb C++ i SFML."
+    },
+    "fruitninja": {
+      "title": "Fruit Ninja",
+      "description": "Joc on has de tallar menjar i evitar bombes. Mostra rànquing de puntuacions. Vaig practicar integració amb backend i persistència amb XML, JSON, MySQL i Firebase."
+    },
+    "valowiki": {
+      "title": "ValoWiki",
+      "description": "Pàgina web informativa sobre el joc Valorant: Home, Agents, Skins, Esports. Desenvolupada en equip amb HTML, CSS i JavaScript."
+    },
+    "portfolio": {
+      "title": "Portafoli",
+      "description": "Una aplicació React amb Firebase per a la secció de contacte, que permet als usuaris enviar missatges. Aquí veuràs els meus projectes, habilitats i podràs conèixer-me."
     }
   },
   "skills": {

@@ -38,6 +38,18 @@
     "breakdown": {
       "title": "Rompe Bloques",
       "description": "Juego estilo Breakout. Aprendí a trabajar en equipo y colaborar. Hecho en C++ con SFML."
+    },
+    "fruitninja": {
+      "title": "Fruit Ninja",
+      "description": "Juego donde debes cortar la comida y esquivar las bombas. Muestra un ranking con las mejores puntuaciones. He desarrollado varias versiones usando XML, JSON, MySQL y Firebase para practicar integración con backend y persistencia de datos."
+    },
+    "valowiki": {
+      "title": "ValoWiki",
+      "description": "Página web informativa sobre el juego Valorant: Inicio, Agentes, Skins, Esports. Desarrollada en equipo con HTML, CSS y JavaScript."
+    },
+    "portfolio": {
+      "title": "Portafolio",
+      "description": "Una aplicación React con Firebase para la sección de contacto, que permite a los usuarios enviar mensajes. Aquí verás mis proyectos, habilidades y podrás conocerme."
     }
   },
   "skills": {
