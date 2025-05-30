@@ -50,6 +50,10 @@
     "portfolio": {
       "title": "Portafolio",
       "description": "Una aplicación React con Firebase para la sección de contacto, que permite a los usuarios enviar mensajes. Aquí verás mis proyectos, habilidades y podrás conocerme."
+    },
+    "gdd": {
+      "title": "GDD",
+      "description": "Un GDD sobre un juego inventado realizado en pareja. En esta práctica aprendí a aceptar que todas las ideas son buenas. Is in catalan"
     }
   },
   "skills": {

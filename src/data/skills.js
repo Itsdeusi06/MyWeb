@@ -15,6 +15,8 @@ const skills = [
   { name: " XML", icon: "FaRegFileAlt"},
   { name: " Json", icon: "FaRegFileAlt"},
   { name: " Js", icon: "FaJsSquare"},
+  { name: " SQL & PL/SQL", icon: "FaDatabase"},
+  { name: " GDD", icon: "FaFile"},
   // More skills...
 ];
 

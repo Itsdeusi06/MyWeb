@@ -5,6 +5,7 @@ import frontoGame from "../assets/frontoGame.png";
 import fruitninja from "../assets/fruitNinja.png";
 import valowiki from "../assets/valowiki.png"
 import portfolio from "../assets/portfolio.png";
+import gdd from "../assets/gdd.png"
 
 
 const projects = [
@@ -57,6 +58,12 @@ const projects = [
     technologies: ["React", "Firebase Hosting", "Firebase Realtime DB"],
     github: "https://github.com/Itsdeusi06/MyWeb",
     demo: "https://portfolio-2e91d.web.app/"
+},
+{
+  key: "gdd",
+  image: gdd,
+  technologies: ["GDD", "Team work"],
+  demo: "https://lasallecat.sharepoint.com/:w:/s/Apunts/ETrLlQo_PNZNkXKuUMa5RdcB-TgO1uja6jTKMa-Oazw5XQ?e=1sf5B0"
 }
 ];
 

@@ -24,9 +24,11 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <FaGithub /> {t('projects.code')}
-                  </a>
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <FaGithub /> {t('projects.code')}
+                    </a>
+                  )}
                   {project.demo && (
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       <FaExternalLinkAlt /> {t('projects.demo')}

@@ -50,6 +50,10 @@
     "portfolio": {
       "title": "Portfolio",
       "description": "A React app with Firebase for the contact section, allowing users to send messages. Here you'll see my projects, skills and learn about me."
+    }, 
+    "gdd": {
+      "title": "GDD",
+      "description": "A GDD about an invented game made in pairs. In this practice, I learned to accept that all ideas are good. Esta en catalan"
     }
   },
   "skills": {
