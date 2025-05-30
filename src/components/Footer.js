@@ -1,14 +1,17 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaItchIo } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import '../styles/footer.css';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footerContainer">
         <div className="footerMain">
           <div className="footerBrand">
             <span className="footerName">Pau Deusedes Domenech</span>
-            <p className="footerRole">Game Developer - Programmer</p>
+            <p className="footerRole">{t('footer.role')}</p>
           </div>
           <div className="footerLinks">
             <a href="https://github.com/Itsdeusi06" className="footerLink">
@@ -26,7 +29,7 @@ function Footer() {
           </div>
         </div>
         <div className="footerBottom">
-          <p>&copy; 2023 Pau Deusedes Domenech. All rights reserved.</p>
+          <p>&copy; 2023 Pau Deusedes Domenech. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>

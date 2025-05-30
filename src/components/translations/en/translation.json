@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Pau Deusedes Domenech",
+    "subtitle": "Game Developer / Programmer",
+    "description": "I'm currently studying Multiplatform App Development (DAM) with a focus on games and digital entertainment. I’m learning Unity, programming fundamentals, and game design, and I love building small projects to sharpen my skills. Passionate about turning ideas into interactive experiences.",
+    "viewWork": "View My Work",
+    "contactMe": "Contact Me",
+    "imageAlt": "Game Development"
+  },
+  "projects": {
+    "title": "My Projects",
+    "code": "Code",
+    "demo": "Demo",
+    "hangman": {
+      "title": "Hang Man",
+      "description": "First project in Python. A simple game where you guess a word by suggesting letters. I learned functions, loops, and conditionals."
+    },
+    "timberman": {
+      "title": "Timber Man",
+      "description": "Chop trees and avoid branches. A clone of Timberman made with C++. I learned classes and objects."
+    },
+    "critter": {
+      "title": "Critter",
+      "description": "Take care of a pet. A Tamagotchi-style game. I practiced classes, pointers, and memory manipulation in C++."
+    },
+    "engine": {
+      "title": "Engine",
+      "description": "Lightweight 2D game engine in C++. Features game loop, input, rendering, collisions, and entity management."
+    },
+    "breakdown": {
+      "title": "Break Down",
+      "description": "Breakout-style game. Learned teamwork and collaboration. Built in C++ with SFML."
+    },
+    "fruitninja": {
+      "title": "Fruit Ninja",
+      "description": "A game where you have to slice the food and dodge the bombs. It show a ranking of the best scores, I make a few version with XML, Json, MySQL and firebase for practice in backend integration and data persistence."
+    },
+    "valowiki": {
+      "title": "ValoWiki",
+      "description": "Informative website about the game Valorant: Home, Agents, Skins, Esports. Built in a team with HTML, CSS, and JavaScript."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "A React app with Firebase for the contact section, allowing users to send messages. Here you'll see my projects, skills and learn about me."
+    }
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I'm a first-year student in Multiplatform App Development (DAM), specializing in digital entertainment and video games. I'm passionate about programming, especially in the context of game development and creative technology.",
+    "paragraph2": "Right now, I'm focused on learning Unity and game development while building small projects to strengthen my skills. I enjoy working with game engines like Unity.",
+    "paragraph3": "I love solving problems, learning how systems work under the hood, and bringing ideas to life through code. I'm currently looking for opportunities to collaborate on projects, learn from real-world challenges, and grow as a developer."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Any questions? Feel free to reach out! I would love to hear from you.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "role": "Game Developer - Programmer",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,35 +1,29 @@
-.navigation-menu {
-  width: 5%;
-  height: 100vh;
-  background-color: black;
-  padding: 20px;
-  position: fixed; /* se queda pegado a la izquierda */
-  top: 0;
-  left: 0;
+.nav-actions img {
+  transition: border-color 0.3s;
 }
 
-.navigation-menu ol {
-  list-style: none;
-  display: flex;
-  flex-direction: column; /* Cambia a columna */
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+.logo {
+  padding: 10px;
 }
 
-.navigation-menu li {
-  display: block;
+.nav-actions img:hover {
+  border-color: #61dafb;
 }
 
-.navigation-menu ol li a {
-  color: white;
-  text-decoration: none;
-  padding: 8px;
-  display: block; /* Para que ocupe todo el ancho */
-  transition: color 0.3s ease;
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: inherit;
+  margin-right: 10px;
 }
 
-.navigation-menu ol li a.active {
-  font-weight: bold;
-  color: white;
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: inherit;
+  margin-left: 15px;
 }

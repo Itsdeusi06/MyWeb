@@ -1,5 +1,6 @@
 const skills = [
-  { name: " HTML & CSS", icon: "FaHtml5"},
+  { name: " HTML", icon: "FaHtml5"},
+  { name: " CSS", icon: "FaCss3Alt"},
   { name: " Python", icon: "FaPython"},
   { name: " C# Programming", icon: "FaCode"},
   { name: " C++ Programming", icon: "FaCode"},
@@ -11,6 +12,9 @@ const skills = [
   { name: " SFML", icon: "FaGamepad"},
   { name: " Visual Studio", icon: "FaCode"},
   { name: " Firebase", icon: "FaDatabase"},
+  { name: " XML", icon: "FaRegFileAlt"},
+  { name: " Json", icon: "FaRegFileAlt"},
+  { name: " Js", icon: "FaJsSquare"},
   // More skills...
 ];
 
