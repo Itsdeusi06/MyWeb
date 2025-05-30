@@ -1,4 +1,4 @@
-// Navbar.js (sin estilos inline, banderas dentro de nav-links siempre visibles)
+// Navbar.js
 import React, { useState } from 'react';
 import { FaMoon, FaSun, FaBars } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
