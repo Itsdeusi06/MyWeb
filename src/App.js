@@ -26,6 +26,7 @@ async function handleSubmit(e) {
   try {
     await push(ref(db, "contacts"), data);
     console.log('Message sent successfully');
+    e.target.reset();
   } catch (error) {
     alert('Error sending message');
     console.error(error);
@@ -34,14 +35,49 @@ async function handleSubmit(e) {
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [visitorIP, setVisitorIP] = useState(null);
 
+    async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    // Add IP to data
+    if (visitorIP) {
+      data.ip = visitorIP;
+    }
+
+    try {
+      await push(ref(db, "contacts"), data);
+      console.log('Message sent successfully');
+      e.target.reset();
+    } catch (error) {
+      alert('Error sending message');
+      console.error(error);
+    }
+  }
+  
   useEffect(() => {
-    // Check for dark mode preference
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDarkMode(true);
       document.body.classList.add('dark-mode');
     }
+
+    fetch('https://api.ipify.org?format=json')
+      .then(res => res.json())
+      .then(({ ip }) => {
+        setVisitorIP(ip);
+        const logRef = ref(db, 'visits');
+        push(logRef, {
+          timestamp: new Date().toISOString(),
+          ip,
+          userAgent: navigator.userAgent,
+          language: navigator.language,
+        });
+      })
+      .catch(console.error);
   }, []);
+
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
