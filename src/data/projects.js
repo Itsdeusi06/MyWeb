@@ -63,7 +63,7 @@ const projects = [
   key: "gdd",
   image: gdd,
   technologies: ["GDD", "Team work"],
-  demo: "https://lasallecat.sharepoint.com/:w:/s/Apunts/ETrLlQo_PNZNkXKuUMa5RdcB-TgO1uja6jTKMa-Oazw5XQ?e=1sf5B0"
+  demo: "https://drive.google.com/file/d/1j3wsSQaLtM4fe8edk_Z9OenHt_lBM-FW/view?usp=sharing"
 }
 ];
 
