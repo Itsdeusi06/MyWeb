@@ -2,10 +2,12 @@
 import React, { useState } from 'react';
 import { FaMoon, FaSun, FaBars } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import { useTheme } from '../context/ThemeContext';
 
-const Navbar = ({ darkMode, toggleDarkMode }) => {
+const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -52,8 +54,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </div>
 
         <div className="nav-actions">
-          <button className="theme-toggle" onClick={toggleDarkMode} aria-label="Toggle Dark Mode">
-            {darkMode ? <FaSun /> : <FaMoon />}
+          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Dark Mode">
+            {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
           <button
             className="mobile-menu-btn"

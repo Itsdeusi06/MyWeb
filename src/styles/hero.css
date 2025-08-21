@@ -6,6 +6,7 @@
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--background-primary);
 }
 
 @media (min-width: 640px) {
@@ -42,6 +43,7 @@
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 @media (min-width: 768px) {
   .heroTitle {
@@ -71,13 +73,13 @@
 
 .heroDescription {
   font-size: 1.125rem;
-  color: #4b5563;
+  color: var(--text-secondary);
   margin-bottom: 2rem;
   max-width: 32rem;
 }
 @media (prefers-color-scheme: dark) {
   .heroDescription {
-    color: #d1d5db;
+    color: var(--text-secondary);
   }
 }
 

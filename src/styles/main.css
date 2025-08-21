@@ -3,12 +3,13 @@
   --primary: #3a86ff;
   --secondary: #8338ec;
   --dark: #212529;
-  --light: #f8f9fa;
+  --light: #f2f2f2;
   --gray: #6c757d;
   --success: #28a745;
   --danger: #dc3545;
   --warning: #fd7e14;
   --info: #17a2b8;
+  --text-secondary: #18191a; /* or your preferred gray */
 }
 
 * {
@@ -28,6 +29,7 @@ body {
 body.dark-mode {
   background-color: var(--dark);
   color: var(--light);
+  --text-secondary: #b0b3b8; /* lighter gray for dark mode */
 }
 
 .container {
