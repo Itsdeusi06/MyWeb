@@ -6,7 +6,7 @@ import fruitninja from "../assets/fruitNinja.png";
 import valowiki from "../assets/valowiki.png"
 import portfolio from "../assets/portfolio.png";
 import gdd from "../assets/gdd.png"
-
+import timberman from "../assets/timberman.jpg"
 
 const projects = [
   {
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     key: "timberman",
-    image: "https://venturebeat.com/wp-content/uploads/2014/09/timberman.jpg",
+    image: timberman,
     technologies: ["C++", "SFML"],
     github: "https://github.com/Itsdeusi06/CPP/tree/main/Timber"
   },

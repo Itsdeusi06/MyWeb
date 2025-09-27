@@ -15,7 +15,7 @@ import './styles/about.css';
 import './styles/contact.css';
 import './styles/footer.css';
 import { db } from './firebase';
-import { ref, push, get, child, update } from "firebase/database";
+import { ref, push, get, update } from "firebase/database";
 import './components/languages'; 
 import { v4 as uuidv4 } from "uuid";
 import { ThemeProvider } from './context/ThemeContext';
@@ -52,55 +52,71 @@ function App() {
     }
   }
 
-  useEffect(() => {
-    // Dark mode
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true);
-      document.body.classList.add('dark-mode');
+useEffect(() => {
+  // Dark mode
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setDarkMode(true);
+    document.body.classList.add('dark-mode');
+  }
+
+  const visitsRef = ref(db, 'visits/' + visitorId);
+  const start = Date.now();
+
+  // Check if visitor exists
+  get(visitsRef).then(snapshot => {
+    if (snapshot.exists()) {
+      const data = snapshot.val();
+      update(visitsRef, {
+        visitCount: (data.visitCount || 0) + 1,
+        lastVisit: new Date().toISOString(),
+      });
+    } else {
+      // New visitor
+      update(visitsRef, {
+        visitorId,
+        visitCount: 1,
+        firstVisit: new Date().toISOString(),
+        lastVisit: new Date().toISOString(),
+        userAgent: navigator.userAgent,
+        language: navigator.language,
+        totalDuration: 0,
+      });
     }
+  });
 
-    const visitsRef = ref(db, 'visits/' + visitorId);
-    const start = Date.now();
+  // Update duration every 1.5 seconds
+  const interval = setInterval(async () => {
+    const duration = Date.now() - start;
+    try {
+      const snap = await get(visitsRef);
+      const oldData = snap.exists() ? snap.val() : {};
+      await update(visitsRef, {
+        lastDuration: duration,
+        totalDuration: (oldData.totalDuration || 0) + duration,
+      });
+    } catch (err) {
+      console.error("Failed to update duration:", err);
+    }
+  }, 1500);
 
-    // Check if visitor exists
-    get(visitsRef).then(snapshot => {
-      if (snapshot.exists()) {
-        const data = snapshot.val();
-        update(visitsRef, {
-          visitCount: (data.visitCount || 0) + 1,
-          lastVisit: new Date().toISOString(),
-        });
-      } else {
-        // New visitor
-        update(visitsRef, {
-          visitorId,
-          visitCount: 1,
-          firstVisit: new Date().toISOString(),
-          lastVisit: new Date().toISOString(),
-          userAgent: navigator.userAgent,
-          language: navigator.language,
-          totalDuration: 0,
-        });
-      }
-    });
+  // Fetch geolocation info
+  fetch("https://ipapi.co/json/")
+    .then(res => res.json())
+    .then(data => {
+      push(ref(db, 'visits/' + visitorId + '/geoVisits'), {
+        visitorId,
+        country: data.country_name,
+        region: data.region,
+        city: data.city,
+        continent: data.continent_code,
+        timestamp: new Date().toISOString(),
+      });
+    })
+    .catch(err => console.error("Geo fetch failed:", err));
 
-    // Update duration every 1.5 seconds
-    const interval = setInterval(async () => {
-      const duration = Date.now() - start;
-      try {
-        const snap = await get(visitsRef);
-        const oldData = snap.exists() ? snap.val() : {};
-        await update(visitsRef, {
-          lastDuration: duration,
-          totalDuration: (oldData.totalDuration || 0) + duration,
-        });
-      } catch (err) {
-        console.error("Failed to update duration:", err);
-      }
-    }, 1500);
+  return () => clearInterval(interval);
+}, [visitorId]);
 
-    return () => clearInterval(interval);
-  }, [visitorId]);
 
 
 

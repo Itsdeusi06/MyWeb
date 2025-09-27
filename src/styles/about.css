@@ -1,29 +1,17 @@
 .aboutSection {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 5rem 1rem;
   max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background: #f3f4f6;
 }
 @media (min-width: 640px) {
-  .aboutSection {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+  .aboutSection { padding-left: 1.5rem; padding-right: 1.5rem; }
 }
 @media (min-width: 1024px) {
-  .aboutSection {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  .aboutSection { padding-left: 2rem; padding-right: 2rem; }
 }
-@media (prefers-color-scheme: dark) {
-  .aboutSection {
-    background: #1f2937;
-  }
+.dark-mode .aboutSection {
+  background: #1f2937;
 }
 
 .aboutContainer {
@@ -46,9 +34,7 @@
   justify-content: center;
 }
 @media (min-width: 768px) {
-  .aboutImageWrapper {
-    max-width: 33%;
-  }
+  .aboutImageWrapper { max-width: 33%; }
 }
 
 .aboutImage {
@@ -59,11 +45,9 @@
   border: 4px solid #fff;
   background: #fff;
 }
-@media (prefers-color-scheme: dark) {
-  .aboutImage {
-    border-color: #1f2937;
-    background: #1f2937;
-  }
+.dark-mode .aboutImage {
+  border-color: #1f2937;
+  background: #1f2937;
 }
 
 .aboutText {
@@ -71,16 +55,17 @@
   max-width: 48rem;
 }
 @media (min-width: 768px) {
-  .aboutText {
-    max-width: 66%;
-  }
+  .aboutText { max-width: 66%; }
 }
 
 .aboutTitle {
-  color: rgb(231, 235, 238);
+  color: #374151;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+}
+.dark-mode .aboutTitle {
+  color: rgb(231, 235, 238);
 }
 
 .aboutParagraph {
@@ -91,10 +76,8 @@
 .aboutParagraphLast {
   margin-bottom: 1.5rem;
 }
-@media (prefers-color-scheme: dark) {
-  .aboutParagraph {
-    color: #d1d5db;
-  }
+.dark-mode .aboutParagraph {
+  color: #d1d5db;
 }
 
 .aboutLinks {
@@ -115,13 +98,11 @@
 .aboutLink:hover {
   color: #0284c7;
 }
-@media (prefers-color-scheme: dark) {
-  .aboutLink {
-    color: #d1d5db;
-  }
-  .aboutLink:hover {
-    color: #38bdf8;
-  }
+.dark-mode .aboutLink {
+  color: #d1d5db;
+}
+.dark-mode .aboutLink:hover {
+  color: #38bdf8;
 }
 
 .aboutIcon {

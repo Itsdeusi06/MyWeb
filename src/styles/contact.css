@@ -1,23 +1,13 @@
 .contactSection {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 5rem 1rem;
   max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 @media (min-width: 640px) {
-  .contactSection {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+  .contactSection { padding-left: 1.5rem; padding-right: 1.5rem; }
 }
 @media (min-width: 1024px) {
-  .contactSection {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  .contactSection { padding-left: 2rem; padding-right: 2rem; }
 }
 
 .contactHeader {
@@ -37,10 +27,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media (prefers-color-scheme: dark) {
-  .contactDescription {
-    color: var(--text-secondary);
-  }
+.dark-mode .contactDescription {
+  color: var(--text-secondary);
 }
 
 .contactFormWrapper {
@@ -54,15 +42,11 @@
   padding: 1.5rem;
 }
 @media (min-width: 768px) {
-  .contactFormWrapper {
-    padding: 2rem;
-  }
+  .contactFormWrapper { padding: 2rem; }
 }
-@media (prefers-color-scheme: dark) {
-  .contactFormWrapper {
-    background: #1e293b;
-    box-shadow: 0 4px 24px rgba(30,41,59,0.3);
-  }
+.dark-mode .contactFormWrapper {
+  background: #1e293b;
+  box-shadow: 0 4px 24px rgba(30,41,59,0.3);
 }
 
 .contactForm {
@@ -78,10 +62,8 @@
   color: #374151;
   margin-bottom: 0.25rem;
 }
-@media (prefers-color-scheme: dark) {
-  .contactLabel {
-    color: #d1d5db;
-  }
+.dark-mode .contactLabel {
+  color: #d1d5db;
 }
 
 .contactInput {
@@ -99,16 +81,14 @@
   border-color: #0284c7;
   box-shadow: 0 0 0 2px #bae6fd;
 }
-@media (prefers-color-scheme: dark) {
-  .contactInput {
-    background: #334155;
-    color: #fff;
-    border-color: #475569;
-  }
-  .contactInput:focus {
-    border-color: #38bdf8;
-    box-shadow: 0 0 0 2px #0ea5e9;
-  }
+.dark-mode .contactInput {
+  background: #334155;
+  color: #fff;
+  border-color: #475569;
+}
+.dark-mode .contactInput:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px #0ea5e9;
 }
 
 .contactButton {
